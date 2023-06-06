@@ -1,0 +1,12 @@
+{
+    "python.linting.pylintArgs": [
+        "--disable=invalid-name"
+    ],
+    "editor.rulers": [
+            100
+    ],
+
+    "files.trimTrailingWhitespace": true,
+    "terminal.integrated.inheritEnv": false,
+    "files.eol": "\n"
+}

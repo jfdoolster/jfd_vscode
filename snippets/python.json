@@ -1,0 +1,16 @@
+{
+	"pyinit": {
+		"prefix": "pyinit",
+		"body": [
+		  "\"\"\"",
+		  "${RELATIVE_FILEPATH/[\\\\]/\\//g}",
+		  "author: jfdooley",
+		  "\"\"\"",
+		  "",
+		  "if __name__ == \"__main__\":",
+		  "    print('$TM_FILENAME_BASE')",
+		  ""
+		],
+		"description": "pyinit"
+	  }
+}

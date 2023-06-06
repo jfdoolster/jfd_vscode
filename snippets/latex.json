@@ -1,0 +1,52 @@
+{
+	"texeq": {
+		"prefix": "texeq",
+		"body": [
+		  "% ${RELATIVE_FILEPATH/[\\\\]/\\//g}",
+		  "\\begin{spacing}{1}",
+		  "\\begin{gather}",
+		  "\\label{${TM_FILENAME_BASE/[_]/\\_/g}}",
+		  "%caption",
+		  "\\end{gather}%",
+		  "\\end{spacing}%"
+		],
+		"description": "texeq"
+	},
+	"texfig": {
+		"prefix": "texfig",
+		"body": [
+		  "% ${RELATIVE_FILEPATH/[\\\\]/\\//g}",
+		  "\\begin{spacing}{1}",
+		  "\\begin{figure}[ht]",
+		  "\\centering",
+		  "\\includegraphics[width=0.6\\textwidth]{%",
+		  "%path_to_image",
+		  "}",
+		  "\\caption{%",
+		  "${TM_FILENAME_BASE/[_]/\\_/g} %caption",
+		  "}",
+		  "\\label{$TM_FILENAME_BASE}",
+		  "\\end{figure}%",
+		  "\\end{spacing}%"
+		],
+		"description": "texfig"
+	},
+	"textab": {
+		"prefix": "textab",
+		"body": [
+		  "% ${RELATIVE_FILEPATH/[\\\\]/\\//g}",
+		  "\\begin{spacing}{1}",
+		  "\\begin{table}[ht]",
+		  "\\centering%",
+		  "\\begin{tabular}",
+		  "\\end{tabular}",
+		  "\\caption{%",
+		  "${TM_FILENAME_BASE/[_]/\\_/g} %caption",
+		  "}",
+		  "\\label{$TM_FILENAME_BASE}",
+		  "\\end{table}%",
+		  "\\end{spacing}%"
+		],
+		"description": "textab"
+	}
+}
