@@ -3,7 +3,7 @@
         "--disable=invalid-name"
     ],
     "editor.rulers": [
-            100
+            90
     ],
 
     "files.trimTrailingWhitespace": true,

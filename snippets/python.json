@@ -12,5 +12,19 @@
 		  ""
 		],
 		"description": "pyinit"
+	  },
+	  "display_start_stop": {
+		"prefix": "display_start_stop",
+		"body": [
+		  "#pylint: disable=import-error, no-name-in-module",
+		  "from lib.util import display_info",
+		  "#pylint: disable=import-error, no-name-in-module",
+		  "",
+		  "display_info(\"STARTING\", __file__)",
+		  "",
+		  "display_info(\"COMPLETE\", __file__)",
+		  ""
+		],
+		"description": "display_start_stop"
 	  }
 }
