@@ -8,7 +8,7 @@
 		  "%",
 		  "% equation",
 		  "%",
-		  "\\label{${TM_FILENAME_BASE}",
+		  "\\label{${TM_FILENAME_BASE}}",
 		  "\\end{gather}%",
 		  "\\end{spacing}%"
 		],
