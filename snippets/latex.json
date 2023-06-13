@@ -5,6 +5,9 @@
 		  "% ${RELATIVE_FILEPATH/[\\\\]/\\//g}",
 		  "\\begin{spacing}{1}",
 		  "\\begin{gather}",
+		  "%",
+		  "% equation",
+		  "%",
 		  "\\label{${TM_FILENAME_BASE}",
 		  "\\end{gather}%",
 		  "\\end{spacing}%"
@@ -22,9 +25,8 @@
 		  "%path_to_image",
 		  "}",
 		  "\\caption{%",
-		  "${TM_FILENAME_BASE/[_]/\\_/g} %caption",
-		  "}",
-		  "\\label{$TM_FILENAME_BASE}",
+		  "${TM_FILENAME_BASE/[_]/\\_/g}",
+		  "}\\label{$TM_FILENAME_BASE}%",
 		  "\\end{figure}%",
 		  "\\end{spacing}%"
 		],
@@ -40,9 +42,8 @@
 		  "\\begin{tabular}",
 		  "\\end{tabular}",
 		  "\\caption{%",
-		  "${TM_FILENAME_BASE/[_]/\\_/g} %caption",
-		  "}",
-		  "\\label{$TM_FILENAME_BASE}",
+		  "${TM_FILENAME_BASE/[_]/\\_/g}",
+		  "}\\label{$TM_FILENAME_BASE}%",
 		  "\\end{table}%",
 		  "\\end{spacing}%"
 		],
