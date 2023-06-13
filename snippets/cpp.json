@@ -1,0 +1,19 @@
+{
+	"cppinit": {
+		"prefix": "cppinit",
+		"body": [
+		  "/*",
+		  "learn.py",
+		  "author: jfdooley",
+		  "*/",
+		  "",
+		  "#include <iostream>",
+		  "",
+		  "int main() {",
+		  "    printf(\"$TM_FILENAME_BASE\\n\");",
+		  "    return 0;",
+		  "}"
+		],
+		"description": "cppinit"
+	  }
+}
