@@ -32,6 +32,22 @@
 		],
 		"description": "texfig"
 	},
+	"texlst": {
+		"prefix": "texlst",
+		"body": [
+		  "% ${RELATIVE_FILEPATH/[\\\\]/\\//g}",
+		  "\\begin{spacing}{1}%",
+		  "\\begin{lstlisting}[%",
+		  "    language=Python, % ",
+		  "    caption={${TM_FILENAME_BASE/[_]/\\\\_/g}}, % ",
+		  "    label={$TM_FILENAME_BASE}, %",
+		  "]",
+		  "# Code...",
+		  "\\end{lstlisting}%",
+		  "\\end{spacing}%"
+		],
+		"description": "texlst"
+	},
 	"textab": {
 		"prefix": "textab",
 		"body": [
