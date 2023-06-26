@@ -1,12 +1,13 @@
 {
     "python.linting.pylintArgs": [
-        "--disable=invalid-name, missing-function-docstring, missing-module-docstring",
+        "--disable=invalid-name, missing-function-docstring, missing-module-docstring, missing-class-docstring",
     ],
     "editor.rulers": [
             90
     ],
-
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.inheritEnv": false,
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16
 }

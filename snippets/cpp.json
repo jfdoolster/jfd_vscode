@@ -1,20 +1,16 @@
 {
 	"cppinit": {
-		"prefix": "cppinit",
+		"prefix": "cppmain",
 		"body": [
-		  "/*",
-		  "learn.py",
-		  "author: jfdooley",
-		  "*/",
-		  "",
 		  "#include <iostream>",
 		  "",
 		  "int main() {",
-		  "    printf(\"$TM_FILENAME_BASE\\n\");",
+		  "    printf(\"hello universe!\\n\");",
 		  "    return 0;",
-		  "}"
+		  "}",
+		  ""
 		],
-		"description": "cppinit"
+		"description": "cppmain"
 	  },
 	  "ListNode": {
 		"prefix": "ListNode",
