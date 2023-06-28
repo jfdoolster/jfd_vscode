@@ -8,6 +8,4 @@
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.inheritEnv": false,
     "files.eol": "\n",
-    "editor.fontSize": 16,
-    "terminal.integrated.fontSize": 16
 }
