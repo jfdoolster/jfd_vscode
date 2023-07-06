@@ -1,7 +1,12 @@
 windows (powershell)
-```bash
+```powershell
+# create
 cmd /c mklink /j $HOME\AppData\Roaming\Code\User\snippets      .\snippets\
 cmd /c mklink /h $HOME\AppData\Roaming\Code\User\settings.json .\settings.json
+
+# delete
+Remove-Item -Path $HOME\AppData\Roaming\Code\User\settings.json
+Remove-Item -Path $HOME\AppData\Roaming\Code\User\snippets
 ```
 
 linux
