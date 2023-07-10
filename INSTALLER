@@ -1,0 +1,38 @@
+#!/bin/bash
+
+VSCODE_DIR=""
+
+OS="`uname`"
+case $OS in
+  'Linux')
+    OS='Linux'
+    VSCODE_DIR="$HOME/.config/Code - OSS/User/"
+    ;;
+  'WindowsNT')
+    OS='Windows'
+    VSCODE_DIR="$HOME/AppData/Roaming/Code/User"
+    ;;
+  *)
+    echo "'$OS' is not registered in installer"
+    exit
+    ;;
+esac
+
+if [ ! -d "$VSCODE_DIR" ]; then
+    echo "directory does not exist: '$VSCODE_DIR'"
+    exit
+fi
+
+if [ $OS == 'Linux' ]; then
+    mkdir -p "$VSCODE_DIR/snippets"
+    ln -vf ./snippets/*    "$VSCODE_DIR/snippets"
+    ln -vf ./settings.json "$VSCODE_DIR/settings.json"
+elif [$OS == 'Windows']; then
+  # if powershell?
+    # if path exists:
+      #Remove-Item -Path $VSCODE_DIR\settings.json
+      #Remove-Item -Path $VSCODE_DIR\snippets
+    #cmd /c mklink /j  $VSCODE_DIR\snippets      .\snippets\
+    #cmd /c mklink /h  $VSCODE_DIR\settings.json .\settings.json
+fi
+
