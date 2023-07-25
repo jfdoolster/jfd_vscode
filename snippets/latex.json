@@ -64,5 +64,14 @@
 		  "\\end{spacing}%"
 		],
 		"description": "textab"
+	},
+	"Problem": {
+	"prefix": "Problem",
+	"body": [
+		"\\Problem{}{}{%",
+		"",
+		"}"
+	],
+	"description": "Problem"
 	}
 }
