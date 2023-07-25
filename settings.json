@@ -1,6 +1,9 @@
 {
+    "python.linting.pylintArgs": [
+	    "--disable=invalid-name, missing-function-docstring, missing-module-docstring, missing-class-docstring"
+    ],
     "editor.rulers": [
-            90
+        90
     ],
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.inheritEnv": false,
