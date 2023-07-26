@@ -36,9 +36,9 @@
 		"prefix": "ListNode",
 		"body": [
 		  "class ListNode:",
-		  "    def __init__(self, val=0, next=None):",
-		  "        self.val = val",
-		  "        self.next = next",
+		  "\tdef __init__(self, val=0, next=None):",
+		  "\t\tself.val = val",
+		  "\t\tself.next = next",
 		  ""
 		],
 		"description": "ListNode"
