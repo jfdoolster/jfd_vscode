@@ -33,9 +33,9 @@
 		"body": [
 		  "% ${RELATIVE_FILEPATH/[\\\\]/\\//g}",
 		  "\\begin{lstlisting}[%",
-		  "    language=Python, % ",
-		  "    caption={${TM_FILENAME_BASE/[_]/\\\\_/g}}, % ",
-		  "    label={lst:$TM_FILENAME_BASE}, %",
+		  "\tlanguage=Python, % ",
+		  "\tcaption={${TM_FILENAME_BASE/[_]/\\\\_/g}}, % ",
+		  "\tlabel={lst:$TM_FILENAME_BASE}, %",
 		  "]",
 		  "# Code...",
 		  "\\end{lstlisting}%",
