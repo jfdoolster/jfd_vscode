@@ -24,6 +24,8 @@ if [ ! -d "$VSCODE_DIR" ]; then
 fi
 
 if [ $OS == 'Linux' ]; then
+    rm -rf "$VSCODE_DIR/snippets"
+    rm -rf "$VSCODE_DIR/settings.json"
     mkdir -p "$VSCODE_DIR/snippets"
     ln -vf ./snippets/*    "$VSCODE_DIR/snippets"
     ln -vf ./settings.json "$VSCODE_DIR/settings.json"
