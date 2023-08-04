@@ -1,28 +1,27 @@
 {
 	"mkinit": {
-		"prefix": "mkinit",
-		"body": [
+	"prefix": "mkinit",
+	"body": [
 			"mkfile_dir  := $(strip $(dir $(realpath $(lastword $(MAKEFILE_LIST)))))",
 			"",
-			".PHONY: all info build clean",
-			"",
-			"all: info build",
-			"",
-			"info:",
-			"\t$(info mkfile_dir:   $(mkfile_dir))",
-			"\t@:",
+			".PHONY: build info clean all",
 			"",
 			"build:",
 			"\t$(info 'build' process not specified ($(mkfile_dir)makefile))",
 			"\t@:",
 			"",
+			"info:",
+			"\t$(info mkfile_dir:   $(mkfile_dir))",
+			"\t@:",
+			"",
 			"clean:",
 			"\t$(info 'clean' process not specified ($(mkfile_dir)makefile))",
 			"\t@:",
-			""
-		],
-		"description": "mkinit"
-	  },
+			"",
+			"all: info build"
+	],
+	"description": "mkinit"
+	},
 	  "mkrsync": {
 		"prefix": "mkrsync",
 		"body": [
