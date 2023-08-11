@@ -5,7 +5,7 @@
 		  "\"\"\"",
 		  "${RELATIVE_FILEPATH/[\\\\]/\\//g}",
 		  "author: jfdooley",
-		  "\"\"\"",
+		  "\"\"\""
 	],
 	"description": "pybanner"
 	},
