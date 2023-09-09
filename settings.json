@@ -7,5 +7,6 @@
     ],
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.inheritEnv": false,
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "clangd.path": "/home/jdooley/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd"
 }
