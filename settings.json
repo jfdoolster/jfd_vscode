@@ -1,6 +1,7 @@
 {
-    "python.linting.pylintArgs": [
-	    "--disable=invalid-name, missing-function-docstring, missing-module-docstring, missing-class-docstring"
+    "pylint.args": [
+	    "--disable=invalid-name, missing-function-docstring, missing-module-docstring, missing-class-docstring",
+        "--rcfile=${workspaceFolder}/.pylintrc"
     ],
     "editor.rulers": [
         90
