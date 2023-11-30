@@ -1,10 +1,15 @@
 # CURRENT:
 
-windows (powershell)
 ```bash
-cd AppData/Roaming/Code
+cd ~/AppData/Roaming/Code # windows
+
+cd ~/.config/Code/ # linux
+
 mv ./User ./.User.bak
 git clone git@github.com:jfdoolster/jfd_vscode.git User
+cp -r .User.bak/workspaceStorage User/
+cp -r .User.bak/globalStorage User/
+cp -r .User.bak/History User/
 ```
 
 
