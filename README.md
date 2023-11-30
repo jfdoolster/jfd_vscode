@@ -2,7 +2,7 @@
 
 windows (powershell)
 ```bash
-%APPDATA%\Code
+cd AppData/Roaming/Code
 mv ./User ./.User.bak
 git clone git@github.com:jfdoolster/jfd_vscode.git User
 ```
