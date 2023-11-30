@@ -1,3 +1,15 @@
+# CURRENT:
+
+windows (powershell)
+```bash
+%APPDATA%\Code
+mv ./User ./.User.bak
+git clone git@github.com:jfdoolster/jfd_vscode.git User
+```
+
+
+## OLD:
+
 windows (powershell)
 ```powershell
 # create

@@ -1,46 +1,21 @@
 {
 	"pybanner": {
-	"prefix": "pybanner",
-	"body": [
-		  "\"\"\"",
-		  "${RELATIVE_FILEPATH/[\\\\]/\\//g}",
-		  "author: jfdooley",
-		  "\"\"\""
-	],
-	"description": "pybanner"
+		"prefix": "pydocstr",
+		"body": [
+			"\"\"\"",
+			"${RELATIVE_FILEPATH/[\\\\]/\\//g}",
+			"author: jfdooley",
+			"\"\"\""
+		],
+		"description": "docstr"
 	},
 	"pymain": {
-	"prefix": "pymain",
-	"body": [
-		"if __name__ == \"__main__\":",
-		"\tprint(__file__)",
-		""
-	],
-	"description": "pymain"
-	},
-	"display_start_stop": {
-	"prefix": "display_start_stop",
-	"body": [
-		"#pylint: disable=import-error, no-name-in-module",
-		"from lib.util import display_info",
-		"#pylint: disable=import-error, no-name-in-module",
-		"",
-		"display_info(\"STARTING\", __file__)",
-		"",
-		"display_info(\"COMPLETE\", __file__)",
-		""
-	],
-	"description": "display_start_stop"
-	},
-	"ListNode": {
-		"prefix": "ListNode",
+		"prefix": "pymain",
 		"body": [
-		  "class ListNode:",
-		  "\tdef __init__(self, val=0, next=None):",
-		  "\t\tself.val = val",
-		  "\t\tself.next = next",
-		  ""
+			"if __name__ == \"__main__\":",
+			"\tprint(__file__)",
+			""
 		],
-		"description": "ListNode"
-	  }
+		"description": "pymain"
+	}
 }

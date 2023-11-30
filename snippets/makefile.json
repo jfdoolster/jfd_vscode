@@ -18,7 +18,8 @@
 			"\t$(info 'clean' process not specified ($(mkfile_dir)makefile))",
 			"\t@:",
 			"",
-			"all: info build"
+			"all: info build",
+			""
 	],
 	"description": "mkinit"
 	},

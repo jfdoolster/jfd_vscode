@@ -1,13 +1,44 @@
 {
     "pylint.args": [
-	    "--disable=invalid-name, missing-function-docstring, missing-module-docstring, missing-class-docstring",
-        "--rcfile=${workspaceFolder}/.pylintrc"
+        "--rcfile=${workspaceFolder}/.pylintrc",
+	    "--disable=missing-function-docstring, missing-module-docstring, missing-class-docstring",
+	    "--disable=invalid-name"
     ],
-    "editor.rulers": [
-        90
-    ],
+    "files.eol": "\n",
+    "editor.rulers": [ 90 ],
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.inheritEnv": false,
-    "files.eol": "\n",
-    "terminal.integrated.defaultProfile.windows": "PowerShell"
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "extensions.ignoreRecommendations": true,
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+    "ltex.additionalRules.enablePickyRules": true,
+    "ltex.additionalRules.motherTongue": "en",
+    "ltex.enabled": [
+        "bibtex",
+        "context",
+        "context.tex",
+        "html",
+        "latex",
+        "markdown",
+        "org",
+        "restructuredtext",
+        "rsweave"
+    ],
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    }
 }

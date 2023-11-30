@@ -5,25 +5,56 @@
 		  "#include <iostream>",
 		  "",
 		  "int main() {",
-		  "\tprintf(\"hello universe!\\n\");",
+		  "\tprintf(\"hello world!\\n\");",
 		  "\treturn 0;",
 		  "}",
 		  ""
 		],
-		"description": "cppmain"
+		"description": "basic c++ main scaffold"
 	  },
-	  "ListNode": {
-		"prefix": "ListNode",
+	"cppbase": {
+	"prefix": "cppbase",
+	"body": [
+		"#include <iostream>",
+		"#include <unistd.h>",
+		"",
+		"#define VERSION \"0.0.0\"",
+		"void usage();",
+		"",
+		"int main(int argc, char** argv) {",
+		"",
+		"    int opt;",
+		"    while(-1 != (opt = getopt(argc, argv, \"dhv\"))) {",
+		"        switch(opt) {",
+		"            case 'h': usage(); return 0;",
+		"            case 'v': printf(\"v%s\\n\", VERSION); return 0;",
+		"        }",
+		"    }",
+		"",
+		"    printf(\"hello world!\\n\");",
+		"",
+		"    return 0;",
+		"}",
+		"",
+		"void usage () {",
+		"    printf(\"$TM_FILENAME_BASE v%s\\n\", VERSION);",
+		"}",
+		""
+	],
+	"description": "c++ main program"
+	},
+	"hppbase": {
+		"prefix": "hppbase",
 		"body": [
-		  "struct ListNode {",
-		  "\tint val;",
-		  "\tListNode *next;",
-		  "\tListNode() : val(0), next(nullptr) {}",
-		  "\tListNode(int x) : val(x), next(nullptr) {}",
-		  "\tListNode(int x, ListNode *next) : val(x), next(next) {}",
-		  "};",
-		  ""
+			"",
+			"#ifndef __${TM_FILENAME_BASE/(.*)/${1:/downcase}/}_h_",
+			"#define __${TM_FILENAME_BASE/(.*)/${1:/downcase}/}_h_",
+			"",
+			"",
+			"",
+			"#endif /* ${TM_FILENAME_BASE/(.*)/${1:/downcase}/}_h_ */",
+			""
 		],
-		"description": "ListNode"
-	  }
+		"description": "hppbase"
+	}
 }
