@@ -1,0 +1,47 @@
+{
+	"mkinit": {
+	"prefix": "mkinit",
+	"body": [
+			"mkfile_dir  := $(strip $(dir $(realpath $(lastword $(MAKEFILE_LIST)))))",
+			"",
+			".PHONY: build info clean all",
+			"",
+			"build:",
+			"\t$(info 'build' process not specified ($(mkfile_dir)makefile))",
+			"\t@:",
+			"",
+			"info:",
+			"\t$(info mkfile_dir:   $(mkfile_dir))",
+			"\t@:",
+			"",
+			"clean:",
+			"\t$(info 'clean' process not specified ($(mkfile_dir)makefile))",
+			"\t@:",
+			"",
+			"all: info build",
+			""
+	],
+	"description": "mkinit"
+	},
+	  "mkrsync": {
+		"prefix": "mkrsync",
+		"body": [
+			"rsync_recdir:= $(strip $(dir $(HOME)/Documents/))",
+			"rsync_opts   = -aAXH --delete --inplace",
+			"",
+			".PHONY: check_lsync lsync",
+			"",
+			"check_lsync:",
+			"\t@rsync $(rsync_opts) --out-format=\"%o %n\" -v --dry-run $(realpath $(mkfile_dir)) $(rsync_recdir)",
+			"\t$(info tx:     $(realpath $(mkfile_dir)))",
+			"\t$(info rx_dir: $(rsync_recdir))",
+			"\t@( echo && read -ep \"Are you sure?!? [Y/n]: \" sure && \\",
+			"\t\tcase \"$$$sure\" in [yY]) true;; *) false;; esac )",
+			"",
+			"lsync: check_lsync",
+			"\t@rsync $(rsync_opts) --stats $(realpath $(mkfile_dir)) $(rsync_recdir)",
+			""
+		],
+		"description": "mkrsync"
+	  }
+}

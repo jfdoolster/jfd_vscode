@@ -1,0 +1,21 @@
+{
+	"pybanner": {
+		"prefix": "pydocstr",
+		"body": [
+			"\"\"\"",
+			"${RELATIVE_FILEPATH/[\\\\]/\\//g}",
+			"author: jfdooley",
+			"\"\"\""
+		],
+		"description": "docstr"
+	},
+	"pymain": {
+		"prefix": "pymain",
+		"body": [
+			"if __name__ == \"__main__\":",
+			"\tprint(__file__)",
+			""
+		],
+		"description": "pymain"
+	}
+}

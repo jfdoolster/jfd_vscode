@@ -1,0 +1,56 @@
+{
+	"texeq": {
+		"prefix": "texeq",
+		"body": [
+		  "% ${RELATIVE_FILEPATH/[\\\\]/\\//g}",
+		  "\\begin{equation}",
+		  "%",
+		  "% equation",
+		  "%",
+		  "\\label{eq:${TM_FILENAME_BASE}}",
+		  "\\end{equation}%"
+		],
+		"description": "latex equation template"
+	},
+	"texfig": {
+		"prefix": "texfig",
+		"body": [
+		  "% ${RELATIVE_FILEPATH/[\\\\]/\\//g}",
+		  "\\begin{figure}[ht]%",
+		  "\\centering%",
+		  "\\includegraphics[width=0.8\\textwidth]{path/to/image}",
+		  "\\caption{\\captiontext}%}%",
+		  "\\label{fig:$TM_FILENAME_BASE}%",
+		  "\\end{figure}%"
+		],
+		"description": "latex figure template"
+	},
+	"textab": {
+		"prefix": "textab",
+		"body": [
+		  "% ${RELATIVE_FILEPATH/[\\\\]/\\//g}",
+		  "\\begin{table}[ht]%",
+		  "\\centering%",
+		  "\\begin{tabular}%",
+		  "\\end{tabular}%",
+		  "\\caption{\\captiontext}%",
+		  "\\label{tab:$TM_FILENAME_BASE}%",
+		  "\\end{table}%"
+		],
+		"description": "textab"
+	},
+	"texlst": {
+		"prefix": "texlst",
+		"body": [
+		  "% ${RELATIVE_FILEPATH/[\\\\]/\\//g}",
+		  "\\begin{lstlisting}[%",
+		  "\tlanguage=Python,%",
+		  "\tcaption={${TM_FILENAME_BASE/[_]/\\\\_/g}},%",
+		  "\tlabel={lst:$TM_FILENAME_BASE},%",
+		  "]",
+		  "# Code...",
+		  "\\end{lstlisting}%"
+		],
+		"description": "latex listing template"
+	},
+}
