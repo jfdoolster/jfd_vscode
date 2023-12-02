@@ -40,5 +40,6 @@
     ],
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
-    }
+    },
+    "workbench.startupEditor": "none"
 }
