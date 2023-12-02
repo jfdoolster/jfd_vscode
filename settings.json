@@ -1,15 +1,16 @@
 {
-    "pylint.args": [
-        "--rcfile=${workspaceFolder}/.pylintrc",
-	    "--disable=missing-function-docstring, missing-module-docstring, missing-class-docstring",
-	    "--disable=invalid-name"
-    ],
     "files.eol": "\n",
     "editor.rulers": [ 90 ],
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.inheritEnv": false,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "extensions.ignoreRecommendations": true,
+    "telemetry.telemetryLevel": "off",
+    "pylint.args": [
+        "--rcfile=${workspaceFolder}/.pylintrc",
+	    "--disable=missing-function-docstring, missing-module-docstring, missing-class-docstring",
+	    "--disable=invalid-name"
+    ],
     "latex-workshop.latex.tools": [
         {
             "name": "latexmk",
