@@ -6,25 +6,15 @@
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "extensions.ignoreRecommendations": true,
     "telemetry.telemetryLevel": "off",
+    "pylint.lintOnChange": true,
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.formatOnType": true,
+    },
     "pylint.args": [
         "--rcfile=${workspaceFolder}/.pylintrc",
 	    "--disable=missing-function-docstring, missing-module-docstring, missing-class-docstring",
 	    "--disable=invalid-name"
-    ],
-    "latex-workshop.latex.tools": [
-        {
-            "name": "latexmk",
-            "command": "latexmk",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-pdf",
-                "-outdir=%OUTDIR%",
-                "%DOC%"
-            ],
-            "env": {}
-        }
     ],
     "ltex.additionalRules.enablePickyRules": true,
     "ltex.additionalRules.motherTongue": "en",
@@ -43,5 +33,22 @@
         "*.pdf": "latex-workshop-pdf-hook"
     },
     "workbench.startupEditor": "none",
-    "pylint.lintOnChange": true
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk_rconly",
+            "command": "latexmk",
+            "args": [
+                "%DOC%"
+            ],
+            "env": {}
+        },
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (latexmkrc)",
+            "tools": [
+                "latexmk_rconly"
+            ]
+        }
+    ]
 }
