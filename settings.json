@@ -34,12 +34,16 @@
     },
     "workbench.startupEditor": "none",
     "window.zoomLevel": -1,
+    "latex-workshop.synctex.synctexjs.enabled": true,
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.latex.tools": [
         {
             "name": "latexmk_rconly",
             "command": "latexmk",
             "args": [
                 "-cd",
+                "-synctex=1",
                 "%DOC%"
             ],
             "env": {}
