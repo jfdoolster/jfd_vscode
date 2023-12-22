@@ -1,7 +1,10 @@
 {
     "files.eol": "\n",
-    "editor.rulers": [ 90 ],
     "files.trimTrailingWhitespace": true,
+    "window.zoomLevel": -2,
+    "editor.rulers": [ 90 ],
+    "editor.fontSize": 18.0,
+    "terminal.integrated.fontSize": 17,
     "terminal.integrated.inheritEnv": false,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "extensions.ignoreRecommendations": true,
@@ -16,24 +19,6 @@
 	    "--disable=missing-function-docstring, missing-module-docstring, missing-class-docstring",
 	    "--disable=invalid-name"
     ],
-    "ltex.additionalRules.enablePickyRules": true,
-    "ltex.additionalRules.motherTongue": "en",
-    "ltex.enabled": [
-        "bibtex",
-        "context",
-        "context.tex",
-        "html",
-        "latex",
-        "markdown",
-        "org",
-        "restructuredtext",
-        "rsweave"
-    ],
-    "workbench.editorAssociations": {
-        "*.pdf": "latex-workshop-pdf-hook"
-    },
-    "workbench.startupEditor": "none",
-    "window.zoomLevel": -1,
     "latex-workshop.synctex.synctexjs.enabled": true,
     "latex-workshop.synctex.afterBuild.enabled": true,
     "latex-workshop.view.pdf.viewer": "tab",
@@ -56,5 +41,22 @@
                 "latexmk_rconly"
             ]
         }
-    ]
+    ],
+    "ltex.additionalRules.enablePickyRules": true,
+    "ltex.additionalRules.motherTongue": "en",
+    "ltex.enabled": [
+        "bibtex",
+        "context",
+        "context.tex",
+        "html",
+        "latex",
+        "markdown",
+        "org",
+        "restructuredtext",
+        "rsweave"
+    ],
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "workbench.startupEditor": "none"
 }
