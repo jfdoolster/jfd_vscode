@@ -58,5 +58,6 @@
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
     },
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "git.openRepositoryInParentFolders": "never"
 }
