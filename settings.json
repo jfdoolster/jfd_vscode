@@ -42,6 +42,11 @@
             ]
         }
     ],
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "workbench.startupEditor": "none",
+    "git.openRepositoryInParentFolders": "never",
     "ltex.additionalRules.enablePickyRules": true,
     "ltex.additionalRules.motherTongue": "en",
     "ltex.enabled": [
@@ -55,9 +60,45 @@
         "restructuredtext",
         "rsweave"
     ],
-    "workbench.editorAssociations": {
-        "*.pdf": "latex-workshop-pdf-hook"
+    "ltex.disabledRules": {
+        "en-US": [
+            "EN_QUOTES",
+        ]
     },
-    "workbench.startupEditor": "none",
-    "git.openRepositoryInParentFolders": "never"
+    "ltex.dictionary": {
+        "en-US": [
+            "adaptivity",
+            "precomputed",
+            "subproblem",
+            "TROPOMI",
+            "GOSAT",
+            "GHGs",
+            "GHGSat",
+            "TCCON",
+            "Aeris",
+            "Pico",
+            "Anemoment",
+            "Matrice",
+            "Trisonica",
+            "Mid-InfraRed",
+            "hexarotor",
+            "windrose",
+            "RPi",
+            "GPIO",
+            "Minschwaner",
+            "Kutcherov",
+            "Glasby",
+            "Etiope",
+            "Abbadi",
+            "Sahar",
+            "Yuanlei",
+            "Zhenlin",
+            "Burdeau",
+            "timeseries",
+            "mesoscale",
+            "programmability",
+            "Elementa",
+            "SCIAMACHY",
+        ],
+    }
 }
