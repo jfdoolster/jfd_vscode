@@ -75,6 +75,7 @@
             "GHGs",
             "GHGSat",
             "TCCON",
+            "SCIAMACHY",
             "Aeris",
             "Pico",
             "Anemoment",
@@ -98,7 +99,7 @@
             "mesoscale",
             "programmability",
             "Elementa",
-            "SCIAMACHY",
+            "mol",
         ],
     }
 }
