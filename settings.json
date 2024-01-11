@@ -21,6 +21,7 @@
 	    "--disable=missing-function-docstring, missing-module-docstring, missing-class-docstring",
 	    "--disable=invalid-name"
     ],
+    "latex-workshop.message.badbox.show": false,
     "latex-workshop.synctex.synctexjs.enabled": true,
     "latex-workshop.synctex.afterBuild.enabled": true,
     "latex-workshop.view.pdf.viewer": "tab",
@@ -70,6 +71,7 @@
     "ltex.disabledRules": {
         "en-US": [
             "EN_QUOTES",
+            "MORFOLOGIK_RULE_EN_US"
         ]
     },
     "ltex.bibtex.fields": {
@@ -129,6 +131,7 @@
             "GWP",
             "hexarotor",
             "ICUAS",
+            "JFD",
             "Kairos",
             "Matrice",
             "mesoscale",
@@ -152,7 +155,7 @@
             "timeseries",
             "Trisonica",
             "TROPOMI",
-            "windrose",
+            "windrose"
         ]
     },
     "ltex.hiddenFalsePositives": {
@@ -161,5 +164,5 @@
             "{\"rule\":\"THREE_NN\",\"sentence\":\"^\\\\QTemporal variability largely explains top-down/bottom-up difference in methane emission estimates from a natural gas production region\\\\E$\"}",
             "{\"rule\":\"TOO_LONG_SENTENCE\",\"sentence\":\"^\\\\QSensor Measurement Uncertainty Units TWS Heading 0.2 rad TWS Pressure 1000 Pa TWS Temperature 2 C TWS Wind Speed 0.2 m/s M600P GNSS Horizontal Velocity 0.05 m/s M600P IMU Heading (Yaw) 0.05 rad M600P IMU Pitch, Roll 0.017 rad MIRA Pico Methane () 10 ppb MIRA Pico Ethane 1 ppb MIRA Pico Methane 10 ppb MIRA Pico Ethane 1 ppb\\\\E$\"}"
         ]
-    }
+    },
 }
