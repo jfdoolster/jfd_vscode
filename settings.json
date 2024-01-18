@@ -71,7 +71,8 @@
     "ltex.disabledRules": {
         "en-US": [
             "EN_QUOTES",
-            "MORFOLOGIK_RULE_EN_US"
+            "MORFOLOGIK_RULE_EN_US",
+            "TOO_LONG_PARAGRAPH"
         ]
     },
     "ltex.bibtex.fields": {
@@ -162,6 +163,7 @@
         "en-US": [
             "{\"rule\":\"THREE_NN\",\"sentence\":\"^\\\\Q\\\"Temporal variability largely explains top-down/bottom-up difference in methane emission estimates from a natural gas production region\\\"\\\\E$\"}",
             "{\"rule\":\"THREE_NN\",\"sentence\":\"^\\\\QTemporal variability largely explains top-down/bottom-up difference in methane emission estimates from a natural gas production region\\\\E$\"}",
+            "{\"rule\":\"TOO_LONG_SENTENCE\",\"sentence\":\"^\\\\QQ A P+ Q A P+ Q A P+ Q A P+ 1 B 67 26 D 28 51 B 30 76 A 38 2 A 51 27 D 39 52 E 46 77 B 34 3 D 55 28 D 71 53 C 36 78 C 57 4 E 55 29 A 38 54 E 16 79 D 77 5 A 19 30 E 35 55 B 33 80 B 51 6 D 39 31 A 34 56 C 79 81 B 30 7 A 75 32 D 90 57 D 59 82 E 39 8 D 47 33 D 89 58 B 45 83 C 45 9 D 39 34 B 86 59 E 41 84 B 35 10 C 58 35 A 73 60 C 67 85 B 22 11 A 60 36 A 41 61 E 55 86 E 23 12 E 39 37 E 55 62 E 62 87 E 57 13 E 52 38 A 53 63 D 34 88 B 26 14 A 42 39 E 20 64 C 22 89 E 31 15 C 36 40 A 42 65 B 33 90 C 40 16 A 48 41 C 34 66 E 44 91 D 30 17 A 32 42 C 38 67 C 34 92 D 20 18 B 30 43 B 66 68 A 89 93 D 41 19 E 64 44 A 42 69 C 72 94 B 14 20 E 37 45 D 41 70 A 66 95 C 31 21 C 24 46 E 67 71 E 65 96 B 23 22 B 58 47 C 46 72 E 63 97 A 17 23 E 55 48 D 21 73 A 38 98 D 46 24 C 55 49 B 74 74 B 30 99 B 25 25 E 57 50 C 51 75 B 30 100 A 36\\\\E$\"}",
             "{\"rule\":\"TOO_LONG_SENTENCE\",\"sentence\":\"^\\\\QSensor Measurement Uncertainty Units TWS Heading 0.2 rad TWS Pressure 1000 Pa TWS Temperature 2 C TWS Wind Speed 0.2 m/s M600P GNSS Horizontal Velocity 0.05 m/s M600P IMU Heading (Yaw) 0.05 rad M600P IMU Pitch, Roll 0.017 rad MIRA Pico Methane () 10 ppb MIRA Pico Ethane 1 ppb MIRA Pico Methane 10 ppb MIRA Pico Ethane 1 ppb\\\\E$\"}",
             "{\"rule\":\"TOO_LONG_SENTENCE\",\"sentence\":\"^\\\\QSensor Measurement Uncertainty Units TWS Heading 0.2 rad TWS Pressure 1000 Pa TWS Temperature 2 C TWS Wind Speed 0.2 m/s M600P GNSS Horizontal Velocity 0.05 m/s M600P IMU Heading (Yaw) 0.05 rad M600P IMU Pitch, Roll 0.017 rad MIRA Pico Methane 10 ppb MIRA Pico Ethane 1 ppb\\\\E$\"}"
         ]
