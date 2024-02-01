@@ -1,0 +1,36 @@
+{
+	"tsBase": {
+	"prefix": "tsBase",
+	"body": [
+		"<template>",
+		"  <div>",
+		"    <h1 class=\"title\"> {{ msg }} </h1>",
+		"  </div>",
+		"</template>",
+		"",
+		"<script lang=\"ts\">",
+		"import { Component, Prop, Vue } from \"vue-property-decorator\";",
+		"",
+		"@Component",
+		"export default class $TM_FILENAME_BASE extends Vue {",
+		"  @Prop({ default: \"$TM_FILENAME_BASE\" }) msg!: string;",
+		"}",
+		"</script>"
+	],
+	"description": "tsBase"
+	},
+	"tsScript": {
+	"prefix": "tsScript",
+	"body": [
+		"<script lang=\"ts\">",
+		"import { Component, Prop, Vue } from \"vue-property-decorator\";",
+		"",
+		"@Component",
+		"export default class $TM_FILENAME_BASE extends Vue {",
+		"  @Prop({ default: \"$TM_FILENAME_BASE\" }) msg!: string;",
+		"}",
+		"</script>"
+	],
+	"description": "tsScript"
+	}
+}

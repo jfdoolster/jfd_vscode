@@ -1,0 +1,15 @@
+{
+	"tsScript": {
+	"prefix": "tsScript",
+	"body": [
+	  "import { Component, Prop, Vue } from \"vue-property-decorator\";",
+	  "",
+	  "@Component",
+	  "export default class $TM_FILENAME_BASE extends Vue {",
+	  "  @Prop({ default: \"$TM_FILENAME_BASE\" }) msg!: string;",
+	  "}",
+	  ""
+	],
+	"description": "tsScript"
+  }
+}

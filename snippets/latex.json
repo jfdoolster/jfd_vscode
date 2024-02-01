@@ -52,5 +52,38 @@
 		  "\\end{lstlisting}%"
 		],
 		"description": "latex listing template"
-	}
+	},
+	"texsec0": {
+		"prefix": "texsec0",
+		"body": [
+		  "\\section{${TM_SELECTED_TEXT:${1:SECTION}}}%",
+		  "\\label{sec:${1}}"
+		],
+		"description": "latex section{}"
+	},
+	"texsec1": {
+		"prefix": "texsec1",
+		"body": [
+		  "\\subsection{${TM_SELECTED_TEXT:${1:SUBSECTION}}}%",
+		  "\\label{sec:${1}}"
+		],
+		"description": "latex subsection{}"
+	},
+	"texsec2": {
+		"prefix": "texsec2",
+		"body": [
+		  "\\subsubsection{${TM_SELECTED_TEXT:${1:SUBSUBSECTION}}}%",
+		  "\\label{sec:${1}}"
+		],
+		"description": "latex subsubsection{}"
+	},
+	"texsec3": {
+		"prefix": "texsec3",
+		"body": [
+		  "\\paragraph{${TM_SELECTED_TEXT:${1:PARAGRAPH}}}%",
+		  "\\label{sec:${1}}"
+		],
+		"description": "latex paragraph{}"
+	},
+
 }
